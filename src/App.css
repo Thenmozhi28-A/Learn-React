@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html, body {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:beige;
 }
 
-.App-link {
-  color: #61dafb;
+.bttn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  width:100%;
+  background-color: #007bff;
+  color:white;
+  font-weight: bold;
+  margin-top: 30px;
+  border-width: 1px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .btn:hover{
+  background-color:aliceblue;
+  color: black;
+} */
+
+.log{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+
 }
+
+.card{
+  background-color: white;
+  padding: 50px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  font-size: small;
+  display: flex;
+  align-self: flex-end;
+}
+
+input{
+  height: 30px;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 5px;
+}
+
+label{
+  font-size: 14px;
+  
+}
+
+.name{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.box,
+.count1{
+  margin-top: 10px;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.count,
+.countback{
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.btn1{
+  width: 100px;
+}
+
+.change{
+  margin-top: 10px;
+  display: flex;
+  gap:10px;
+}
+.c1{
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.c1{
+  cursor: pointer;
+}
+
