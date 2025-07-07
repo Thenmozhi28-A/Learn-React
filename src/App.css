@@ -123,3 +123,14 @@ label{
   cursor: pointer;
 }
 
+.props{
+  border: 1px solid black;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.wel{
+  display: flex;
+  margin-bottom: 10px;
+
+}

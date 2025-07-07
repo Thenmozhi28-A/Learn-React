@@ -11,6 +11,7 @@ function ChangeName() {
     console.log("name changed to:", name1);
   }, [name1]);
     
+
  const Change = () => {
     if (input.trim() !== "") {
       setName1(input);
