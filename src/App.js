@@ -1,6 +1,7 @@
 import "./App.css";
 import { use, useEffect, useState } from "react";
 
+
 function App() {
   const [name, setName] = useState("");
   console.log(name);
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className="card">
       
-
+      <h1>Welcome</h1>
       <form className="log">
         <h4>Login Form </h4>
 
