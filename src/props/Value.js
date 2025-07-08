@@ -1,7 +1,7 @@
 function Value(props){ 
 
   return (
-    <div>
+    <div className="props">
       <p>Name : {props.name}</p>
       <p>Age : {props.age}</p>
       <p>City : {props.city}</p>

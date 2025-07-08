@@ -127,10 +127,21 @@ label{
   border: 1px solid black;
   padding: 50px;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 .wel{
   display: flex;
   margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
 
+}
+
+.click{
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
 }
