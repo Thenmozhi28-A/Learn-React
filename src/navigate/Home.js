@@ -1,17 +1,18 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
+  
 
   const About = () => {
-    navigate("/about"); 
+    navigate("/about",{state:{msg:"Hi Thenmozhi,"}}); 
   };
 
   return (
-    <>
-      <h2>This is Home Page</h2>
+    <div>
+      <h2>This is Home</h2>
       <button className="click" onClick={About}>Go to About</button>
-    </>
+    </div>
   );
 }
 

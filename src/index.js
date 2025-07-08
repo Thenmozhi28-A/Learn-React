@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     {/* <App />  */}
     {/* < ChangeName />  */}
-    {/* <Main /> */}
+    {/* <Main />  */}
     <App1 />
    
   </React.StrictMode>
