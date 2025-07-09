@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 
 function About() {
+  
   const location =useLocation();
   console.log(location);
   
@@ -12,7 +13,7 @@ function About() {
   <h2>This is About Page</h2>
   <p>{msg}</p>
   </div>
-  
+
   );
 }
 
