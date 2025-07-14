@@ -4,7 +4,7 @@ import GrandChild from './GrandChild'
 const Child = () => {
   return (
     <div>
-        <p>Child Page</p>
+    
 
       <GrandChild />
     </div>

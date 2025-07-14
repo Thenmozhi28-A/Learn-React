@@ -6,7 +6,7 @@ import ChangeName from './ChangeName';
 import Main from './props/Main';
 import App1 from './navigate/App1';
 import App2 from './usecontext/App2';
-
+import Form from './form/Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +15,8 @@ root.render(
     {/* < ChangeName />  */}
     {/* <Main />  */}
     {/* <App1 /> */}
-    <App2 />
+    {/* <App2 /> */}
+    <Form/>
    
   </React.StrictMode>
 );

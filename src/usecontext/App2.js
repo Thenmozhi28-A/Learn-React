@@ -7,17 +7,16 @@ const App2 = () => {
     const name="ZIVA";
 
     const user={
-        
         age:22,
         city:"vengarai"
     };
 
     const course="Web Developer";
 
-    const combine={name,user,course};
+    // const combine={name,user,course};
 
   return (
-    <UserContext.Provider value={combine}>
+    <UserContext.Provider value={{name,user,course}}>
         <div>
             <h1>Welcome</h1>
             <Parent />
