@@ -7,6 +7,7 @@ import Main from './props/Main';
 import App1 from './navigate/App1';
 import App2 from './usecontext/App2';
 import Form from './form/Form';
+import App3 from './apicall/App3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +17,8 @@ root.render(
     {/* <Main />  */}
     {/* <App1 /> */}
     {/* <App2 /> */}
-    <Form/>
+    {/* <Form/> */}
+    <App3 />
    
   </React.StrictMode>
 );
