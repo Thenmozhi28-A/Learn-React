@@ -10,7 +10,7 @@ const FetchGet = () => {
   }, []);
 
   return (
-    <div>
+    <div> 
       <h3>Simple GET Example</h3>
       {data ? (
         <div>
