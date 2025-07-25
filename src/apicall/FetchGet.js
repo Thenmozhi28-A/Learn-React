@@ -14,8 +14,8 @@ const FetchGet = () => {
       <h3>Simple GET Example</h3>
       {data ? (
         <div>
-          <p>📌 Title: {data.title}</p>
-          <p>📝 Body: {data.body}</p>
+          <p>Title: {data.title}</p>
+          <p>Body: {data.body}</p>
         </div>
       ) : (
         <p>Loading...</p>

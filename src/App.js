@@ -1,80 +1,66 @@
-import "./App.css";
-import { use, useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import { FaEdit } from "react-icons/fa";
 
-
-function App() {
-  const [name, setName] = useState("");
-  console.log(name);
-
-  const [password, setPassword] = useState("");
-  console.log(password);
-
-  const [btn, setBtn] = useState("");
-
-  const [count1, setCount1] = useState(0);
+const App = () => {
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    if (count1 === 10) {
-      console.log("You reached 10");
-    } else if (count1 === 0) {
-      console.log("You reached 0");
-    }
-  }, [count1]);
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
 
   return (
-    <div className="card">
+    <div style={{ padding: "50px" }}>
+      <h2>🚀 All Fetch Methods in One Page</h2>
+
+      {/* GET Section */}
+      <hr />
+      <h3>GET Example</h3>
+
       
-      <h1>Welcome</h1>
-      <form className="log">
-        <h4>Login Form </h4>
+        {data.map((item) => (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+             border: "1px solid #bbb",
+             padding:"10px",
+             marginBottom:"10px",
+             borderRadius:"5px"
+            }}
+          >
+            <div>
+              <p>
+                <strong>ID:</strong> {item.id}
+              </p>
+              <p>
+                <strong>Title:</strong> {item.title}
+              </p>
+              <p>
+                <strong>Body:</strong> {item.body}
+              </p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <FaEdit style={{ cursor: "pointer" }} />
+            </div>
+          </div>
+        )
+      
+      )}
 
-        <label>User Name:</label>
-
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-
-        <label>Password:</label>
-
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </form>
-
-      <button
-        className="bttn"
-        value={btn}
-        onClick={(e) => setBtn({ uname: name, pwd: password })}
-      >
-        Login
-      </button>
-
-      <div className="name">
-        <p>username : {btn.uname}</p>
-        <p>password : {btn.pwd}</p>
-      </div>
-
-      <div className="count1">
-        <button
-          className="btn1"
-          value="count1"
-          onClick={(e) => setCount1(count1 + 1)}
-        >
-          +
-        </button>
-
-        <p>Number: {count1}</p>
-
-        <button className="btn1" onClick={(e) => setCount1(count1 - 1)}>
-          -
-        </button>
-      </div>
+      <br />
+      <hr />
+      <br />
     </div>
   );
-}
+};
 
 export default App;
