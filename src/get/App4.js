@@ -8,9 +8,8 @@ const App4 = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Get />} />
-        {/* <Route path="/nav" element={<Nav />} /> */}
-        <Route path="/nav/:id" element={<Nav />} />
 
+        <Route path="/nav/:id" element={<Nav />} />
       </Routes>
     </Router>
   );
@@ -18,5 +17,8 @@ const App4 = () => {
 
 export default App4;
 
-{/* <Route path="/nav/:id" element={<Nav />} /> */}
+/* <Route path="/nav/:id" element={<Nav />} /> */
+
+// <Route path="/nav/:id" element={<Nav />} />
+
 //  onClick={() => navigate(`/nav${item.id}`)}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 
-const Nav = () => {
+const Nav1 = () => {
   const location = useLocation();
   const post = location.state;
 
@@ -87,4 +87,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav1;
