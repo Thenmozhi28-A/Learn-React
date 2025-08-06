@@ -13,23 +13,31 @@ import PutExample from './apicall/PutExample';
 import DeleteExample from './apicall/DeleteExample';
 import PatchExample from './apicall/PatchExample';
 import App4 from './get/App4'
+import App6 from './redux/App6';
+import { Provider } from 'react-redux';
+import store from './redux/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* <App />  */}
-    {/* < ChangeName />  */}
-    {/* <Main />  */}
-    {/* <App1 /> */}
-    {/* <App2 /> */}
-    {/* <Form/> */}
-    {/* <App3 /> */}
-    {/* <PostExample/> */}
-    {/* <PutExample /> */}
-    {/* <DeleteExample/> */}
-    {/* <PatchExample />  */}
-    <App4/>
+  // <React.StrictMode>
+  //   {/* <App />  */}
+  //   {/* < ChangeName />  */}
+  //   {/* <Main />  */}
+  //   {/* <App1 /> */}
+  //   {/* <App2 /> */}
+  //   {/* <Form/> */}
+  //   {/* <App3 /> */}
+  //   {/* <PostExample/> */}
+  //   {/* <PutExample /> */}
+  //   {/* <DeleteExample/> */}
+  //   {/* <PatchExample />  */}
+  //   {/* <App4/> */}
+  //   <App6/>
    
-  </React.StrictMode>
+  // </React.StrictMode>
+  <Provider store={store}>
+    <App6/>
+
+  </Provider>
 );
 

@@ -20,7 +20,7 @@ const Nav1 = () => {
         title,
         body,
       }),
-    })
+    }) 
       .then((res) => res.json())
       .then((data) => {
         alert("Updated successfully!");
